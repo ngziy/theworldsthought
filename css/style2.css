@@ -1,0 +1,67 @@
+@import "https://fonts.googleapis.com/css?family=Rubik+Mono+One";
+html{
+  background-image: url("../assets/bg-01.png");
+  background-position: center bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height:100%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Rubik Mono One', sans-serif;
+  text-align: center;
+}
+
+.words {
+  color: #fff;
+  line-height: 1;
+}
+.words div {
+  font-size: 1.7em;
+  margin-top: 1.5em;
+  margin-left: 9em;
+  margin-right: 9em;
+  -webkit-animation: move 15s ease-in-out infinite;
+          animation: move 15s ease-in-out infinite;
+}
+.words div:nth-child(odd) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.words div:nth-child(even) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate(-80%, 0);
+            transform: translate(-80%, 0);
+  }
+  50% {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    -webkit-transform: translate(80%, 0);
+            transform: translate(80%, 0);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate(-80%, 0);
+            transform: translate(-80%, 0);
+  }
+  50% {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    -webkit-transform: translate(80%, 0);
+            transform: translate(80%, 0);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
