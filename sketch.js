@@ -30,7 +30,7 @@ function setup() {
   for (let i = 0; i < 20; i++) {
     textPos[i] = {
       px: random(-width/2, width/2),
-      py: random(50, (height/4)*3),
+      py: random(100, (height/4)*3),
       speed: random(2, 4)
     };
   }
@@ -64,7 +64,7 @@ function draw() {
 
 
   timer++;
-  if(timer> 1750) {
+  if(timer> 1500) {
     // JSONmessages = loadJSON(url1,"jsonp")
     // keys = Object.keys(JSONmessages);
     location.reload()
