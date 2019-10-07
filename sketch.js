@@ -31,7 +31,7 @@ function setup() {
     textPos[i] = {
       px: random(-width/2, width/2),
       py: random(50, (height/4)*3),
-      speed: random(1, 5)
+      speed: random(2, 4)
     };
   }
 
@@ -56,8 +56,8 @@ function draw() {
         fill(255)
         text(JSONmessages[keys[keys.length-k]].messages, textPos[k].px, textPos[k].py, width/4, height/7);
         textPos[k].px+=textPos[k].speed;
-        if(textPos[k].px > width*2) {
-          textPos[k].px = -width/2;
+        if(textPos[k].px > width*1.5) {
+          textPos[k].px = -width/.5;
         }
       }
 
