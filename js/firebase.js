@@ -76,19 +76,10 @@ $(window).on('load', function () {
 
 });
 
-// var pos = -400;
-
-// function setup() {
-// }
-
-// function draw() {
-//   if(data.children.length > 0) {
-//     data.children[0].offsetLeft += pos;
-//     console.log(data.children[0].offsetLeft - 400);
-//     pos++;
-//     if(pos > 400) {
-//       pos = -400;
-//     }
-//   }
-// }
+$("form").keypress(function(e) {
+  //Enter key
+  if (e.which == 13) {
+    return false;
+  }
+});
 
